@@ -11,6 +11,20 @@
 |
 */
 
+// Route::get('/', 'HomeController@index')->name('home');
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/add_question', function () {
+    return view('add_question');
 });
