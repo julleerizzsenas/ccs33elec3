@@ -28,3 +28,11 @@ Route::get('/index', function () {
 Route::get('/add_question', function () {
     return view('add_question');
 });
+
+Route::get('/tags', function () {
+    return view('tags');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});

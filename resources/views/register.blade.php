@@ -11,7 +11,7 @@
               <div class="info d-flex align-items-center">
                 <div class="content">
                   <div class="logo">
-                    <h1>Dashboard</h1>
+                    <h1>webApp</h1>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>

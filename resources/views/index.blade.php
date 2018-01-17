@@ -2,35 +2,7 @@
   <body>
     <div class="page home-page">
       <!-- Main Navbar-->
-      <header class="header">
-        <nav class="navbar">
-          <!-- Search Box-->
-          <div class="search-box">
-            <button class="dismiss"><i class="fa fa-close"></i></button>
-            <form id="searchForm" action="#" role="search">
-              <input type="search" placeholder="What are you looking for..." class="form-control">
-            </form>
-          </div>
-          <div class="container-fluid">
-            <div class="navbar-holder d-flex align-items-center justify-content-between">
-              <!-- Navbar Header-->
-              <div class="navbar-header">
-                <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
-                  <div class="brand-text brand-big"><span>Bootstrap </span><strong>Dashboard</strong></div>
-                  <div class="brand-text brand-small"><strong>BD</strong></div></a>
-                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
-              </div>
-              <!-- Navbar Menu -->
-              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                <!-- Search-->
-                <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="fa fa-search"></i></a></li>
-                <!-- Logout    -->
-                <li class="nav-item"><a href="/" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+       @include('layouts.top_nav')
       <div class="page-content d-flex align-items-stretch">
         @include('layouts.sidebar')  
         <div class="content-inner">
@@ -73,19 +45,66 @@
           </section>
           <section class="dashboard-counts no-padding-bottom">
             <div class="container-fluid">
+                <!-- Recent Updates-->
                 <div class="col-lg-12">
-                    <div class="card">
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <div class="col-sm-12">
-                          <input type="text" placeholder="Title" class="form-control"> <br/>
-                          <input type="text" placeholder="Description" class="form-control"> <br/>
-                          <input type="text" placeholder="Tags" class="form-control"> <br/>
-                            <button type="submit" class="btn btn-primary pull-right">Post</button>
-                        </div>
+                  <div class="recent-updates card">
+                    <div class="card-close">
                     </div>
-                </div>
-            </div>
+                    <div class="card-header">
+                      <h3 class="h4">Recent Updates</h3>
+                    </div>
+                    <div class="card-body no-padding">
+                      <!-- Item-->
+                      <div class="item d-flex justify-content-between">
+                        <div class="info d-flex">
+                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="title">
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item-->
+                      <div class="item d-flex justify-content-between">
+                        <div class="info d-flex">
+                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="title">
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item        -->
+                      <div class="item d-flex justify-content-between">
+                        <div class="info d-flex">
+                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="title">
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item-->
+                      <div class="item d-flex justify-content-between">
+                        <div class="info d-flex">
+                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="title">
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item-->
+                      <div class="item d-flex justify-content-between">
+                        <div class="info d-flex">
+                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="title">
+                            <h5>Lorem ipsum dolor sit amet.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
         </div>
     </section>
 

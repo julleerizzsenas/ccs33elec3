@@ -10,6 +10,8 @@
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
-            <li class="active"> <a href="index"><i class="fa fa-home"></i>Home</a></li>
+            <li> <a href="index"><i class="fa fa-home"></i>Home</a></li>
+            <li> <a href="profile"><i class="fa fa-user-circle"></i>Profile</a></li>
             <li> <a href="add_question"><i class="fa fa-pencil-square-o"></i>Add question</a></li>
+            <li> <a href="tags"><i class="fa fa-tags"></i>Tags</a></li>
         </nav>
