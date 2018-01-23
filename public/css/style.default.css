@@ -1343,8 +1343,9 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
 
 .recent-updates p {
   font-size: 0.8em;
-  color: #aaa;
+  color: #000000;
   margin-bottom: 0;
+  margin-left: 3em;
 }
 
 .recent-updates .date {
@@ -2587,7 +2588,7 @@ body {
 }
 
 a {
-  color: #796AEE;
+  color: #999;
   text-decoration: none;
 }
 
@@ -2947,3 +2948,4 @@ a.text-light:focus, a.text-light:hover {
 a.text-dark:focus, a.text-dark:hover {
   color: #1d2124 !important;
 }
+

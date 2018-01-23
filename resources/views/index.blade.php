@@ -17,7 +17,7 @@
             <div class="container-fluid">
               <div class="row bg-white has-shadow">
                 <!-- Item -->
-                <div class="col-xl-6 col-sm-6">
+                <div class="col-xl-4 col-sm-4">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-violet"><i class="fa fa-quora"></i></div>
                     <div class="title"><span>Questions</span>
@@ -29,7 +29,7 @@
                   </div>
                 </div>
                 <!-- Item -->
-                <div class="col-xl-6 col-sm-6">
+                <div class="col-xl-4 col-sm-4">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-red"><i class="fa fa-comments-o"></i></div>
                     <div class="title"><span>Comments</span>
@@ -38,6 +38,18 @@
                       </div>
                     </div>
                     <div class="number"><strong>70</strong></div>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="col-xl-4 col-sm-4">
+                  <div class="item d-flex align-items-center">
+                    <div class="icon bg-green"><i class="fa fa-tags"></i></div>
+                    <div class="title"><span>Tags</span>
+                      <div class="progress">
+                        <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="{#val.value}" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                      </div>
+                    </div>
+                    <div class="number"><strong>25</strong></div>
                   </div>
                 </div>
               </div>
@@ -57,50 +69,50 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
-                            <h5>Lorem ipsum dolor sit amet.</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                            <h5><b><a href="/post" class="post">PHP Login</a></b></h5>
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
                           </div>
                         </div>
                       </div>
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
-                            <h5>Lorem ipsum dolor sit amet.</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                            <h5><b><a href="/post" class="post">PHP Install</a></b></h5>
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
                           </div>
                         </div>
                       </div>
                       <!-- Item        -->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
-                            <h5>Lorem ipsum dolor sit amet.</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                            <h5><b><a href="/post" class="post">PHP Syntax</a></b></h5>
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
                           </div>
                         </div>
                       </div>
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
-                            <h5>Lorem ipsum dolor sit amet.</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                            <h5><b><a href="/post" class="post">PHP Variables</a></b></h5>
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
                           </div>
                         </div>
                       </div>
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="icon-rss-feed"></i></div>
+                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
-                            <h5>Lorem ipsum dolor sit amet.</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
+                            <h5><b><a href="/post" class="post">PHP Echo & Print</a></b></h5>
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
                           </div>
                         </div>
                       </div>

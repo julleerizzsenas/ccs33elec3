@@ -9,9 +9,9 @@
               <div class="info d-flex align-items-center">
                 <div class="content">
                   <div class="logo">
-                    <h1>webApp</h1>
+                    <h1>discussionRoom</h1>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> --}}
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@
                       <label for="login-password" class="label-material">Password</label>
                     </div><a id="login" href="index" class="btn btn-primary">Login</a>
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-                  </form><a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="register" class="signup">Signup</a>
+                  </form><br><small>Do not have an account? </small><a href="register" class="signup">Signup</a>
                 </div>
               </div>
             </div>

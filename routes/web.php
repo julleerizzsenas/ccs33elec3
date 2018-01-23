@@ -36,3 +36,7 @@ Route::get('/tags', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
+Route::get('/post', function () {
+    return view('post');
+});

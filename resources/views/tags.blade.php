@@ -1,35 +1,102 @@
 @include('layouts.header')
 
- <body>
-    <div class="page home-page">
-      <!-- Main Navbar-->
-      @include('layouts.top_nav')
-      <div class="page-content d-flex align-items-stretch">
-        @include('layouts.sidebar') 
-        <div class="content-inner">
-          <!-- Page Header-->
-          <header class="page-header">
-            <div class="container-fluid">
-              <h2 class="no-margin-bottom">Add Question</h2>
-            </div>
-          </header>
-          <section class="dashboard-counts no-padding-bottom">
-            <div class="container-fluid">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="line"></div>
-                        <div class="form-group row">
-                          <div class="col-sm-12">
-                          <input type="text" placeholder="Title" class="form-control"> <br/><br/>
-                          <textarea placeholder="Description" class="form-control"></textarea> <br/>
-                          <br/><input type="text" placeholder="Tags" class="form-control"> <br/><br/><br/>
-                            <button type="submit" class="btn btn-primary pull-right">Post</button>
-                        </div>
-                    </div>
+<body>
+  <div class="page home-page">
+    <!-- Main Navbar-->
+    @include('layouts.top_nav')
+    <div class="page-content d-flex align-items-stretch">
+      @include('layouts.sidebar') 
+      <div class="content-inner">
+        <!-- Page Header-->
+        <header class="page-header">
+          <div class="container-fluid">
+            <h2 class="no-margin-bottom">Add Question</h2>
+          </div>
+        </header>
+        <section class="dashboard-counts no-padding-bottom">
+          <div class="container-fluid">
+            <!-- Recent Updates-->
+            <div class="col-lg-12">
+              <div class="recent-updates card">
+                <div class="card-close">
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="card-header">
+                  <h3 class="h4">Tags</h3>
+                </div>
+                <div class="card-body no-padding">
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>Hello</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>World</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item        -->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>I</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>Am</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>Doing</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>The</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>Best</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>I</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div class="item d-flex justify-content-between">
+                    <div class="info d-flex">
+                      <div class="title">
+                        <h5>Can</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
-
-@include('layouts.index_footer')
+              @include('layouts.index_footer')

@@ -11,9 +11,9 @@
               <div class="info d-flex align-items-center">
                 <div class="content">
                   <div class="logo">
-                    <h1>webApp</h1>
+                    <h1>discussionRoom</h1>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> --}}
                 </div>
               </div>
             </div>
@@ -34,10 +34,10 @@
                       <input id="register-passowrd" type="password" name="registerPassword" required class="input-material">
                       <label for="register-passowrd" class="label-material">password        </label>
                     </div>
-                    <div class="form-group terms-conditions">
+                    {{-- <div class="form-group terms-conditions">
                       <input id="license" type="checkbox" class="checkbox-template">
                       <label for="license">Agree the terms and policy</label>
-                    </div>
+                    </div> --}}
                     <input id="register" type="submit" value="Register" class="btn btn-primary">
                   </form><small>Already have an account? </small><a href="/" class="signup">Login</a>
                 </div>
