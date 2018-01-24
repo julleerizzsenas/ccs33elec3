@@ -40,3 +40,11 @@ Route::get('/profile', function () {
 Route::get('/post', function () {
     return view('post');
 });
+
+Route::resource('posts', 'PostsController');
+Route::resource('tags', 'TagsController');
+Route::resource('posts/{id}', 'PostsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
