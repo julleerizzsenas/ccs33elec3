@@ -2593,7 +2593,8 @@ a {
 }
 
 a:focus, a:hover {
-  color: #3b25e6;
+  /*color: #3b25e6;*/
+  color: #796AEE;
   text-decoration: underline;
 }
 
@@ -2949,3 +2950,7 @@ a.text-dark:focus, a.text-dark:hover {
   color: #1d2124 !important;
 }
 
+.nf-icon {
+  margin-left: 20px;
+  margin-bottom: -10px;
+}

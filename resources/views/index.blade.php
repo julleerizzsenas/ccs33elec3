@@ -1,4 +1,5 @@
 @include('layouts.header')
+
   <body>
     <div class="page home-page">
       <!-- Main Navbar-->
@@ -60,8 +61,8 @@
                 <!-- Recent Updates-->
                 <div class="col-lg-12">
                   <div class="recent-updates card">
-                    <div class="card-close">
-                    </div>
+                    {{-- <div class="card-close">
+                    </div> --}}
                     <div class="card-header">
                       <h3 class="h4">Recent Updates</h3>
                     </div>
@@ -69,9 +70,9 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Login</a></b></h5>
+                            <h5><b><a href="/post" class="post">PHP Intro</a></b></h5>
                             {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
                           </div>
                         </div>
@@ -79,17 +80,7 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
-                          <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Install</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item        -->
-                      <div class="item d-flex justify-content-between">
-                        <div class="info d-flex">
-                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
                             <h5><b><a href="/post" class="post">PHP Syntax</a></b></h5>
                             {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
@@ -99,7 +90,7 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
                             <h5><b><a href="/post" class="post">PHP Variables</a></b></h5>
                             {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
@@ -109,16 +100,28 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
                           <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Echo & Print</a></b></h5>
+                            <h5><b><a href="/post" class="post">PHP Echo / Print</a></b></h5>
                             {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
                           </div>
                         </div>
                       </div>
-                    </div>
-        </div>
-    </section>
+                      <!-- Item-->
+                      <div class="item d-flex justify-content-between">
+                        <div class="info d-flex">
+                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="title">
+                            <h5><b><a href="/post" class="post">PHP Data Types</a></b></h5>
+                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
+                          </div>
+                        </div>
+                      </div>
+
+                      
+              </div>
+          </section>
+
 
           
 @include('layouts.index_footer')
