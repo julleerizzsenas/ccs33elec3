@@ -26,7 +26,7 @@ class PostsController extends Controller
         $totalcomments = Comment::count('id');
         $totaltags = Tag::count('id');
        
-        return view('pages.dashboard',compact('posts', 'totalposts','totalcomments', 'totaltags'));
+        return view('index',compact('posts', 'totalposts','totalcomments', 'totaltags'));
     }
 
     /**

@@ -22,7 +22,16 @@
                 <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="fa fa-search"></i></a></li>
                 
                 <!-- Logout    -->
-                <li class="nav-item"><a href="/" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+                
+                <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
               </ul>
             </div>
           </div>

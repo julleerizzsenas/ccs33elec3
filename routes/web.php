@@ -14,7 +14,7 @@
 // Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
-    return view('login');
+    return view('auth/login');
 });
 
 Route::get('/register', function () {
@@ -41,9 +41,9 @@ Route::get('/post', function () {
     return view('post');
 });
 
-Route::resource('posts', 'PostsController');
-Route::resource('tags', 'TagsController');
-Route::resource('posts/{id}', 'PostsController');
+// Route::resource('posts', 'PostsController');
+// Route::resource('tags', 'TagsController');
+// Route::resource('posts/{id}', 'PostsController');
 
 Auth::routes();
 
