@@ -50,7 +50,7 @@
                       @endif
                     </div>
 
-                    <button type="submit" class="btn btn-default submit">Log in</button>
+                    <button type="submit" class="btn btn-primary submit">Log in</button>
 
                     <br><small>Do not have an account? </small><a href="register" class="signup">Signup</a>
                   </form>

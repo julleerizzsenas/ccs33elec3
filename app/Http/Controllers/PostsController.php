@@ -18,15 +18,15 @@ class PostsController extends Controller
 
     public function index()
     {
-        $posts = Post::latest()
-            ->filter(request(['month', 'year']))
-            ->paginate(5);
+        // $posts = Post::latest()
+        //     ->filter(request(['month', 'year']))
+        //     ->paginate(5);
 
-        $totalposts = Post::count('id');
-        $totalcomments = Comment::count('id');
-        $totaltags = Tag::count('id');
+        // $totalposts = Post::count('id');
+        // $totalcomments = Comment::count('id');
+        // $totaltags = Tag::count('id');
        
-        return view('index',compact('posts', 'totalposts','totalcomments', 'totaltags'));
+        // return view('index',compact('posts', 'totalposts','totalcomments', 'totaltags'));
     }
 
     /**
@@ -36,9 +36,9 @@ class PostsController extends Controller
      */
     public function create()
     {
-        $tags = Tag::pluck('name');
+        // $tags = Tag::pluck('name');
 
-        return view('pages.create',  compact('tags'));
+        return view('add_question',  compact('tags'));
     }
 
     /**
@@ -48,8 +48,8 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {/*
-        dd($request->all());*/
+    {
+        // dd($request->all());
 
         $hidden = $request->get('hidden-tags');
 
@@ -63,11 +63,11 @@ class PostsController extends Controller
             'tags' => 'required'
             ]);*/
 
-        for($s =0;$s < count($tagsdata);$s++)
-        {
-            $tag = Tag::create(['name' => $tagsdata[$s]]);
-            $tagarray[] = $tag->id;
-        }
+        // for($s =0;$s < count($tagsdata);$s++)
+        // {
+        //     $tag = Tag::create(['name' => $tagsdata[$s]]);
+        //     $tagarray[] = $tag->id;
+        // }
 
             
         $post = Post::create([
@@ -82,26 +82,26 @@ class PostsController extends Controller
         } 
 
 
-        if($post)
-        {
+        // if($post)
+        // {
             
-            if($tag) 
-            {
-                session()->flash(
-                    'message', 'Your post has now been published.');
-                session()->flash(
-                    'alert', 'alert alert-success');                
-            }else
-            {
-                session()->flash(
-                    'message', 'Your post has fail.');
-                session()->flash(
-                  'alert', 'alert alert-danger');                
-            }
+        //     if($tag) 
+        //     {
+        //         session()->flash(
+        //             'message', 'Your post has now been published.');
+        //         session()->flash(
+        //             'alert', 'alert alert-success');                
+        //     }else
+        //     {
+        //         session()->flash(
+        //             'message', 'Your post has fail.');
+        //         session()->flash(
+        //           'alert', 'alert alert-danger');                
+        //     }
 
-        }else{
-            dd('Fail!');            
-        }
+        // }else{
+        //     dd('Fail!');            
+        // }
                 return redirect('/posts/create');
     }
 
@@ -117,7 +117,7 @@ class PostsController extends Controller
         //     ->groupBy('posts.id')
         //     ->get(['posts.*', Post::raw('count(*) as comments_count')]);
 
-        return view('layouts.filter', compact('post'));
+        return view('post', compact('post'));
     }
 
     /**
