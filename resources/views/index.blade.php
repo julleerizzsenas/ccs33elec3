@@ -70,50 +70,50 @@
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-file-text-o"></i></div>
                           <div class="title">
                             <h5><b><a href="/post" class="post">PHP Intro</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
+                              <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference...<a href="/post"><b><i>Read more</i></b></a></p>
                           </div>
                         </div>
                       </div>
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-file-text-o"></i></div>
                           <div class="title">
                             <h5><b><a href="/post" class="post">PHP Syntax</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
+                              <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference...<a href="/post"><b><i>Read more</i></b></a></p>
                           </div>
                         </div>
                       </div>
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-file-text-o"></i></div>
                           <div class="title">
                             <h5><b><a href="/post" class="post">PHP Variables</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
+                              <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference...<a href="/post"><b><i>Read more</i></b></a></p>
                           </div>
                         </div>
                       </div>
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-file-text-o"></i></div>
                           <div class="title">
                             <h5><b><a href="/post" class="post">PHP Echo / Print</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
+                              <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference...<a href="/post"><b><i>Read more</i></b></a></p>
                           </div>
                         </div>
                       </div>
                       <!-- Item-->
                       <div class="item d-flex justify-content-between">
                         <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="nf-icon"><i class="fa fa-file-text-o"></i></div>
                           <div class="title">
                             <h5><b><a href="/post" class="post">PHP Data Types</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
+                              <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference...<a href="/post"><b><i>Read more</i></b></a></p>
                           </div>
                         </div>
                       </div>
