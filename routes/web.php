@@ -11,7 +11,23 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('login');
+
+Auth::routes();
+
+Route::get('home', 'PostsController@index')->name('home');
+Route::get('add_question', 'PostsController@create');
+Route::post('store', 'PostsController@store');
+Route::post('posts', 'PostsController@show');
+
+
+Route::resource('posts', 'PostsController');
+// Route::resource('tags', 'TagsController');
+Route::resource('posts/{id}', 'PostsController');
+
+
+
+// Route::get('/home', 'HomeController@index')->name('home');
 
 // Route::get('/', function () {
 //     return view('auth/login');
@@ -40,16 +56,3 @@ Route::get('/', 'HomeController@index')->name('home');
 // Route::get('/post', function () {
 //     return view('post');
 // });
-
-Route::get('add_question', 'PostsController@create');
-Route::post('store', 'PostsController@store');
-Route::post('posts', 'PostsController@show');
-
-
-Route::resource('posts', 'PostsController');
-// Route::resource('tags', 'TagsController');
- // Route::resource('posts/{id}', 'PostsController');
-
-Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');

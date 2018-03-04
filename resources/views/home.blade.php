@@ -26,7 +26,7 @@
                         <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="{#val.value}" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
                       </div>
                     </div>
-                    <div class="number"><strong>25</strong></div>
+                    <div class="number"><strong>{{ $totalposts }}</strong></div>
                   </div>
                 </div>
                 <!-- Item -->
@@ -38,7 +38,7 @@
                         <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="{#val.value}" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
                       </div>
                     </div>
-                    <div class="number"><strong>70</strong></div>
+                    <div class="number"><strong>{{ $totalcomments }}</strong></div>
                   </div>
                 </div>
                 <!-- Item -->
@@ -50,7 +50,7 @@
                         <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="{#val.value}" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
                       </div>
                     </div>
-                    <div class="number"><strong>25</strong></div>
+                    <div class="number"><strong>{{ $totaltags }}</strong></div>
                   </div>
                 </div>
               </div>
@@ -68,56 +68,45 @@
                     </div>
                     <div class="card-body no-padding">
                       <!-- Item-->
-                      <div class="item d-flex justify-content-between">
-                        <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
-                          <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Intro</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item-->
-                      <div class="item d-flex justify-content-between">
-                        <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
-                          <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Syntax</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item-->
-                      <div class="item d-flex justify-content-between">
-                        <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
-                          <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Variables</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item-->
-                      <div class="item d-flex justify-content-between">
-                        <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
-                          <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Echo / Print</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Item-->
-                      <div class="item d-flex justify-content-between">
-                        <div class="info d-flex">
-                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
-                          <div class="title">
-                            <h5><b><a href="/post" class="post">PHP Data Types</a></b></h5>
-                            {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p> --}}
-                          </div>
-                        </div>
-                      </div>
+        
+                      @foreach ($posts as $post)
 
+                      <div class="item d-flex justify-content-between">
+                        <div class="info d-flex">
+                          <div class="nf-icon"><i class="fa fa-sticky-note-o"></i></div>
+                          <div class="title">
+                            <h5><b><a href="/posts/{{ $post->id }}" class="post">{{ $post->topicname }}<</a></b></h5>
+                            <small> by {{ $post->user->firstname." ".$post->user->lastname }}</small></h2>
+                            <ul class="nav pull-right panel_toolbox">
+                              <i class="fa fa-comments-o fa-lg green">{{$post->comments->count()}}</i>&nbsp;&nbsp;&nbsp;
+                              <i class="fa fa-eye fa-lg green">{{$post->tags->count()}}</i>
+                            </ul>      
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="x_content">
+                        <div class="dashboard-widget-content">
+                          <ul class="list-unstyled timeline widget">
+                            <li>
+                              <div class="block">
+                                <div class="block_content">
+                                  <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ str_limit($post->description, $limit = 300, $end = ' ...') }}
+                                   <a href="/posts/{{ $post->id }}">
+                                    <b><i>Read more</i></b>
+                                   </a>
+                                    <p class="pull-right"> Date Published: <i class="green">{{ $post->created_at->toFormattedDateString() }}</i></p>
+                                  </p>
+                                  <br>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                     
+                      @endforeach
+                      {{ $posts->links() }}
                       
               </div>
           </section>

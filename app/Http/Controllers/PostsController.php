@@ -18,15 +18,15 @@ class PostsController extends Controller
 
     public function index()
     {
-        // $posts = Post::latest()
-        //     ->filter(request(['month', 'year']))
-        //     ->paginate(5);
+        $posts = Post::latest()
+            ->filter(request(['month', 'year']))
+            ->paginate(5);
 
-        // $totalposts = Post::count('id');
-        // $totalcomments = Comment::count('id');
-        // $totaltags = Tag::count('id');
+        $totalposts = Post::count('id');
+        $totalcomments = Comment::count('id');
+        $totaltags = Tag::count('id');
        
-        // return view('index',compact('posts', 'totalposts','totalcomments', 'totaltags'));
+        return view('home',compact('posts', 'totalposts','totalcomments', 'totaltags'));
     }
 
     /**
