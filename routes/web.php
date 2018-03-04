@@ -11,40 +11,20 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
 
-// Route::get('/', function () {
-//     return view('login');
-// });
-
-// Route::get('/register', function () {
-//     return view('register');
-// });
-
-// Route::get('/index', function () {
-//     return view('index');
-// });
-
-// Route::get('/add_question', function () {
-//     return view('add_question');
-// });
-
-// Route::get('/tags', function () {
-//     return view('tags');
-// });
-
-// Route::get('/profile', function () {
-//     return view('profile');
-// });
-
-// Route::get('/post', function () {
-//     return view('post');
-// });
-
-// Route::resource('posts', 'PostsController');
-// Route::resource('tags', 'TagsController');
-// Route::resource('posts/{id}', 'PostsController');
+Route::get('/', 'HomeController@index')->name('login');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('index', 'PostsController@index')->name('home');
+Route::get('add_question', 'PostsController@create');
+Route::post('store', 'PostsController@store');
+Route::post('posts', 'PostsController@show');
+
+
+Route::resource('posts', 'PostsController');
+// Route::resource('tags', 'TagsController');
+Route::resource('posts/{id}', 'PostsController');
+
+
+

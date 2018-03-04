@@ -19,7 +19,16 @@
               <!-- Navbar Menu -->
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">              
                 <!-- Logout    -->
-                <li class="nav-item"><a href="/" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+                
+                <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
               </ul>
             </div>
           </div>

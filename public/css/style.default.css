@@ -2954,3 +2954,8 @@ a.text-dark:focus, a.text-dark:hover {
   margin-left: 20px;
   margin-bottom: -10px;
 }
+
+.rightt {
+    float: right;
+    margin-right: 15px;
+}​
